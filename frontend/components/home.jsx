@@ -20,12 +20,12 @@ module.exports = React.createClass({
         <section id="home-splash">
 
           <div id="home-splash-text">
-            <h2 text-align="center" className="home-title">Welcome to TixStarter</h2>
-            <h3 text-align="center" className="home-dropphrase">Forward Fund Live Experiences with Ticket Sales</h3>
+            <h2 text-align="center" className="home-title">Bienvenido a Eventos IO.GT</h2>
+            <h3 text-align="center" className="home-dropphrase">Promociona tus eventos con nosotros</h3>
 
               <div id="menubuttons">
                 <ul className="index-item-menu-ul">
-                  <li className="home-splash-li"><a href="#home-events-index" text-align="center" className="scroll-a">Browse Experiences</a></li>
+                  <li className="home-splash-li"><a href="#home-events-index" text-align="center" className="scroll-a">Ver eventos</a></li>
 
                 </ul>
               </div>
