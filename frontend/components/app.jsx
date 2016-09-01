@@ -147,9 +147,8 @@ module.exports = React.createClass({
         <p>{loggedInMessageForSteve}</p>
         <div id="navbarbuttons">
           <ul className="header-ul">
-            <li className="header-li"  onClick={this.goToSignIn}>Sign In</li>
-            <li className="header-li"  onClick={this.goToSignUp}>Sign Up</li>
-            <li className="header-li"  onClick={this.signInWithDemoAccount}>Demo Account</li>
+            <li className="header-li"  onClick={this.goToSignIn}>Ingresar</li>
+            <li className="header-li"  onClick={this.goToSignUp}>Regístrate</li>
           </ul>
         </div>
     </div>
@@ -157,14 +156,14 @@ module.exports = React.createClass({
 
     var loggedInMenu =(
       <div id="othermenu">
-        <p onClick={this.returnHome} className="hover-pointer cody-font home-title">TixStarter</p>
+        <p onClick={this.returnHome} className="hover-pointer cody-font home-title">Eventos IO.GT/p>
         <br></br>
         <div id="navbarbuttons">
           <ul className="header-ul">
-            <li className="header-li" onClick={this.goToCreateEvent}>Create Event</li>
+            <li className="header-li" onClick={this.goToCreateEvent}>Crear Evento</li>
             {hasEventsMenu}
-            <li className="header-li" onClick={this.goToDashboard}>My Dashboard</li>
-            <li className="header-li" onClick={this.justClickedLogOut}>Log Out</li>
+            <li className="header-li" onClick={this.goToDashboard}>Mi escritorio</li>
+            <li className="header-li" onClick={this.justClickedLogOut}>Salir</li>
           </ul>
 
         </div>
@@ -178,15 +177,15 @@ module.exports = React.createClass({
     if (UserStore.loggedIn()){
       menu = (
                 <div id="othermenu">
-                  <p onClick={this.returnHome} className="hover-pointer cody-font home-title">TixStarter</p>
+                  <p onClick={this.returnHome} className="hover-pointer cody-font home-title">Eventos IO.GT</p>
 
                   <br></br>
 
                   <div id="navbarbuttons">
                     <ul className="header-ul">
-                      <li className="header-li" onClick={this.goToCreateEvent}>Create Event</li>
-                      <li className="header-li" onClick={this.goToDashboard}>My Dashboard</li>
-                      <li className="header-li" onClick={this.justClickedLogOut}>Log Out</li>
+                      <li className="header-li" onClick={this.goToCreateEvent}>Crear Evento</li>
+                      <li className="header-li" onClick={this.goToDashboard}>Mi Escritorio</li>
+                      <li className="header-li" onClick={this.justClickedLogOut}>Salir</li>
                     </ul>
                   </div>
 
@@ -196,17 +195,17 @@ module.exports = React.createClass({
       if (UserStore.user().events[0]){
         menu = (
                 <div id="othermenu">
-                  <p onClick={this.returnHome} className="hover-pointer cody-font home-title">TixStarter</p>
+                  <p onClick={this.returnHome} className="hover-pointer cody-font home-title">Eventos IO.GT</p>
 
                   <br></br>
 
                   <div id="navbarbuttons">
                     <ul className="header-ul">
-                      <li className="header-li" onClick={this.goToCreateEvent}>Create Event</li>
-                      <li className="header-li" onClick={this.goToCreateShowtime}>Create Showtime</li>
-                      <li className="header-li" onClick={this.goToCreateTicket}>Create Ticket</li>
-                      <li className="header-li" onClick={this.goToDashboard}>My Dashboard</li>
-                      <li className="header-li" onClick={this.justClickedLogOut}>Log Out</li>
+                      <li className="header-li" onClick={this.goToCreateEvent}>Crear Evento</li>
+                      <li className="header-li" onClick={this.goToCreateShowtime}>Crear Showtime</li>
+                      <li className="header-li" onClick={this.goToCreateTicket}>Crear Ticket</li>
+                      <li className="header-li" onClick={this.goToDashboard}>Mi Escritorio</li>
+                      <li className="header-li" onClick={this.justClickedLogOut}>Salir</li>
                     </ul>
                   </div>
 
@@ -217,15 +216,14 @@ module.exports = React.createClass({
     } else {
       menu = (
               <div id="othermenu">
-                <p onClick={this.returnHome} className="hover-pointer cody-font home-title">TixStarter</p>
+                <p onClick={this.returnHome} className="hover-pointer cody-font home-title">Eventos IO.GT</p>
 
                 <br></br>
 
                 <div id="navbarbuttons">
                   <ul className="header-ul">
-                    <li className="header-li"  onClick={this.goToSignIn}>Sign In</li>
-                    <li className="header-li"  onClick={this.goToSignUp}>Sign Up</li>
-                    <li className="header-li"  onClick={this.signInWithDemoAccount}>Demo Account</li>
+                    <li className="header-li"  onClick={this.goToSignIn}>Ingresar</li>
+                    <li className="header-li"  onClick={this.goToSignUp}>Registrarse</li>
                   </ul>
                 </div>
 
@@ -282,7 +280,7 @@ module.exports = React.createClass({
 
             <br></br>
 
-            <p>Here, distract yourself with Hamilton until I finish:</p>
+            <p>Aquí, distráigase con Hamilton hasta que termine:</p>
 
             <iframe width="{854/1.2}"
                     height="{480/1.2}"
